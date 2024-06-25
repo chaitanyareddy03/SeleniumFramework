@@ -1,6 +1,12 @@
+using System.Text.RegularExpressions;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Model;
+using AventStack.ExtentReports.Reporter;
 using Microsoft.Extensions.Configuration;
+using NUnit.Framework.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.DevTools.V123.Page;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Safari;
@@ -13,10 +19,11 @@ public class Base
     private ThreadLocal<IWebDriver> _driver = new ThreadLocal<IWebDriver>();
     string? browserName;
     string? envName;
-
+    string? projectPath;
+   
 
     [SetUp]
-    public void Setup()
+    public void StartBrower()
     {
         //Get Brower Name, EnvironmentURL from the terminal 
         browserName = TestContext.Parameters["browserName"];
@@ -27,7 +34,7 @@ public class Base
         {
             browserName = con.GetBrowserName();
         }
-        else if(envName is null){
+        if(envName is null){
             envName = "Testing";
         }
         
@@ -55,6 +62,7 @@ public class Base
     [TearDown]
     public void AfterTest()
     {
+        
         if (_driver.Value != null)
         {
             _driver.Value.Quit();

@@ -116,3 +116,15 @@
 /Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/SeleniumExtras.PageObjects.dll
 /Users/chaitu/SeleniumFramework/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.sourcelink.json
 /Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/SeleniumExtras.WaitHelpers.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/ExtentReports.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/HtmlAgilityPack.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/System.Web.Razor.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/MongoDB.Bson.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/MongoDB.Driver.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/RazorEngine.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/System.Diagnostics.EventLog.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll

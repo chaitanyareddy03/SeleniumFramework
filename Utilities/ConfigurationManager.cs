@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+using OpenQA.Selenium.DevTools.V123.Network;
 
 
 namespace SeleniumFramework.Utilities;
@@ -8,8 +9,9 @@ public class ConfigurationManager
     private readonly IConfiguration _configuration;
     public ConfigurationManager()
     {
+        string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName;
         var builder = new ConfigurationBuilder()
-            .AddJsonFile("/Users/chaitu/SeleniumFramework/SeleniumFramework/appsettings.json", optional: false,
+            .AddJsonFile(path + "/appsettings.json", optional: false,
                 reloadOnChange: true);
         _configuration = builder.Build();
     }
