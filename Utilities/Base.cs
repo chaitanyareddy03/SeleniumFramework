@@ -9,38 +9,64 @@ namespace SeleniumFramework.Utilities;
 
 public class Base
 {
-    private IWebDriver _driver;
+    //private IWebDriver _driver;
+    private ThreadLocal<IWebDriver> _driver = new ThreadLocal<IWebDriver>();
+    string? browserName;
+    string? envName;
+
+
     [SetUp]
     public void Setup()
     {
+        //Get Brower Name, EnvironmentURL from the terminal 
+        browserName = TestContext.Parameters["browserName"];
+        envName = TestContext.Parameters["envName"];
         //Reading Browser name form configuration file.
         ConfigurationManager con = new ConfigurationManager();
-        //Creating the selected browser driver instance.
-        InitBrowser(con.GetBrowserName());//InitBrowser("Chrome");
+        if (browserName is null)
+        {
+            browserName = con.GetBrowserName();
+        }
+        else if(envName is null){
+            envName = "Testing";
+        }
         
-        _driver.Manage().Window.Maximize();
-        _driver.Url = con.GetEnvironmentUrl("Testing");
+        //Creating the selected browser driver instance.
+        InitBrowser(browserName);//InitBrowser("Chrome");
+        _driver.Value.Manage().Window.Maximize();
+        _driver.Value.Url = con.GetEnvironmentUrl(envName);
     }
 
     private void InitBrowser(string? browserName)
     {
-        _driver = browserName switch
+        _driver.Value = browserName switch
         {
             "Chrome" => new ChromeDriver(),
             "Firefox" => new FirefoxDriver(),
             "Edge" => new EdgeDriver(),
             "Safari" => new SafariDriver(),
-            _ => _driver
+            _ => throw new ArgumentException("Browser not supported: " + browserName)
         };
     }
     public IWebDriver GetDriver()
     {
-        return _driver;
+        return _driver.Value;
     }
     [TearDown]
     public void AfterTest()
     {
-        
-        _driver.Close();
+        if (_driver.Value != null)
+        {
+            _driver.Value.Quit();
+            _driver.Value.Dispose();
+        }
+    }
+    [OneTimeTearDown]
+    public void Dispose()
+    {
+        if (_driver != null)
+        {
+            _driver.Dispose();
+        }
     }
 }

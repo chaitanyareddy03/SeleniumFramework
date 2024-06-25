@@ -114,3 +114,5 @@
 /Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/System.Text.Json.dll
 /Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
 /Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/SeleniumExtras.PageObjects.dll
+/Users/chaitu/SeleniumFramework/SeleniumFramework/obj/Debug/net8.0/SeleniumFramework.sourcelink.json
+/Users/chaitu/SeleniumFramework/SeleniumFramework/bin/Debug/net8.0/SeleniumExtras.WaitHelpers.dll

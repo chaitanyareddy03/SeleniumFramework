@@ -6,7 +6,7 @@ namespace SeleniumFramework.Tests;
 public class LayoutTest : Base
 {
     
-    [Test]
+    [Test, Category("Smoke")]
     public void GoToLoginPageTest()
     {
         var layoutPage = new LayoutPage(GetDriver());

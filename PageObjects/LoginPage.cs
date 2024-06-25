@@ -1,4 +1,5 @@
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.PageObjects;
 
 namespace SeleniumFramework.PageObjects;
@@ -6,6 +7,7 @@ namespace SeleniumFramework.PageObjects;
 public class LoginPage
 {
     private readonly IWebDriver _driver;
+
     public LoginPage(IWebDriver driver)
     {
         _driver = driver;

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PwprL1uRcwji8/2NrDe30eEaQd/+IK+HroD27r5l5gQPNvQq7N7Zj27p/Nma9XkzDkuIj0/IrcQnLY11LOE2gA==",
+  "dgSpecHash": "d5RHrJRm/MtFuN3JPL0vbV4yXlfZyHPps5AbM+BNDi6zPemV1HCxUToPJrDQWbuayL8Dr47PtMR4jGdTNPS2xg==",
   "success": true,
   "projectFilePath": "/Users/chaitu/SeleniumFramework/SeleniumFramework/SeleniumFramework.csproj",
   "expectedPackageFiles": [
     "/Users/chaitu/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/Users/chaitu/.nuget/packages/dotnetseleniumextras.pageobjects/3.11.0/dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "/Users/chaitu/.nuget/packages/dotnetseleniumextras.pageobjects.core/4.14.1/dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
+    "/Users/chaitu/.nuget/packages/dotnetseleniumextras.waithelpers/3.11.0/dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "/Users/chaitu/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",
     "/Users/chaitu/.nuget/packages/microsoft.extensions.configuration/9.0.0-preview.4.24266.19/microsoft.extensions.configuration.9.0.0-preview.4.24266.19.nupkg.sha512",
     "/Users/chaitu/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0-preview.4.24266.19/microsoft.extensions.configuration.abstractions.9.0.0-preview.4.24266.19.nupkg.sha512",
